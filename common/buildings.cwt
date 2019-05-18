@@ -1,0 +1,79 @@
+
+types = {
+	type[building] = {
+		path = "game/common"
+		path_file = "buildings.txt"
+		localisation = {
+			name = "$"
+		}
+	}
+	subtype[fort] = {
+		type = fort 
+	}
+	subtype[factory] = {
+		type = factory 
+	}
+	subtype[naval_base] = {
+		type = naval_base 
+	}
+	subtype[railroad] = {
+		type = railroad 
+	}
+}
+
+
+building = {
+	type = enum[building_type]
+
+	subtype[factory] = {
+		## cardinality = 0..1
+		on_completion = facotry
+		
+		## cardinality = 0..1
+		completion_size = float
+
+		production_type = <production_types>
+		pop_build_factory = yes
+		advanced_factory = yes	
+	}
+	
+    max_level = int[0..255]
+	
+	## cardinality = 1..inf
+	goods_cost = {
+        ## cardinality = 0..10
+		<trade_good> = float
+	}
+
+	time = int
+	visibility = yes
+	onmap = no
+
+	subtype[fort] = {
+        province = yes
+        one_per_state = yes
+        fort_level = int
+	}
+
+	subtype[naval_base] = {
+        port = yes
+		colonial_points = {
+				### points at levels 1-6
+                ## cardinality = 6..6
+                int[0..255]
+        }
+        province = yes
+        one_per_state = yes
+        colonial_range = int
+        local_ship_build = float
+	}
+
+	subtype[railroad] = {
+        province = yes
+        infrastructure = float
+        movement_cost = float
+    	pop_build_factory = yes
+		spawn_railway_track = no
+	}
+
+}
