@@ -23,9 +23,8 @@ types = {
 
 
 building = {
-	type = enum[building_type]
-
 	subtype[factory] = {
+		type = factory
 		## cardinality = 0..1
 		on_completion = facotry
 		
@@ -50,12 +49,14 @@ building = {
 	onmap = no
 
 	subtype[fort] = {
+		type = fort
         province = yes
         one_per_state = yes
         fort_level = int
 	}
 
 	subtype[naval_base] = {
+		type = naval_base
         port = yes
 		colonial_points = {
 				### points at levels 1-6
@@ -69,6 +70,7 @@ building = {
 	}
 
 	subtype[railroad] = {
+		type = railroad
         province = yes
         infrastructure = float
         movement_cost = float
