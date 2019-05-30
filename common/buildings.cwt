@@ -6,18 +6,18 @@ types = {
 		localisation = {
 			name = "$"
 		}
-	}
-	subtype[fort] = {
-		type = fort 
-	}
-	subtype[factory] = {
-		type = factory 
-	}
-	subtype[naval_base] = {
-		type = naval_base 
-	}
-	subtype[railroad] = {
-		type = railroad 
+		subtype[fort] = {
+			type = fort 
+		}
+		subtype[factory] = {
+			type = factory 
+		}
+		subtype[naval_base] = {
+			type = naval_base 
+		}
+		subtype[railroad] = {
+			type = railroad 
+		}
 	}
 }
 
