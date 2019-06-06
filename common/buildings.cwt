@@ -26,7 +26,7 @@ building = {
 	subtype[factory] = {
 		type = factory
 		## cardinality = 0..1
-		on_completion = facotry
+		on_completion = factory
 		
 		## cardinality = 0..1
 		completion_size = float
@@ -34,14 +34,19 @@ building = {
 		production_type = <production_types>
 		pop_build_factory = yes
 		advanced_factory = yes	
+		## cadinality = 0..1
+		default_enabled = bool
 	}
 	
     max_level = int[0..255]
 	
+	## cardinality = 0..1
+	cost = int
+
 	## cardinality = 1..inf
 	goods_cost = {
         ## cardinality = 0..10
-		<trade_good> = float
+		<goods> = float
 	}
 
 	time = int

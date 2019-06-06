@@ -1,6 +1,6 @@
 types = {
 	type[goods] = {
-		path = "game/common/cultures"
+		path = "game/common"
 		path_file = "goods.txt"
 		skip_root_key = any
 		localisation = {

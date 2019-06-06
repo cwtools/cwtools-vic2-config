@@ -11,7 +11,7 @@ alias[trigger:is_triggered_only] = bool
 ## scope = any
 alias[trigger:major] = bool
 ## scope = any
-alias[trigger:immediate] =  = {
+alias[trigger:immediate] = {
 	alias_name[effect] = alias_match_left[effect]
 }
 ## scope = any

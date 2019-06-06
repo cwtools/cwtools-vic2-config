@@ -81,6 +81,87 @@ types = {
 	}
 }
 
+enums = {
+	complex_enum[trade_policies] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				trade_policy = {
+					enum_name = {
+						
+					}
+				}
+			}
+		}
+	}
+	complex_enum[economic_policies] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				economic_policy = {
+					enum_name = {
+
+					}
+				}
+			}
+		}
+	}
+	complex_enum[religious_policies] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				religious_policy = {
+					enum_name = {
+
+					}
+				}
+			}
+		}
+	}
+	complex_enum[state_capitalism] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				state_capitalism = {
+					enum_name = {
+
+					}
+				}
+			}
+		}
+	}
+	complex_enum[citizenship_policies] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				citizenship_policy = {
+					enum_name = {
+
+					}
+				}
+			}
+		}
+	}
+	complex_enum[war_policies] = {
+		path = "game/common/issues.txt"
+		start_from_root = yes
+		name = {
+			party_issues = {
+				war_policy = {
+					enum_name = {
+
+					}
+				}
+			}
+		}
+	}
+}
+
 policy = {
 	## cardinality = 5..10
 	<issue> = {
